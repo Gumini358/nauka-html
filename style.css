@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background-color: #79a0241d;
+    background-color: #69974f5b;
     color: #0f172a;
 }
 
@@ -141,33 +141,30 @@ footer {
     }
 }
 
-/* Kontener główny — układa kolumny obok siebie w poziomie */
 .services-container {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;          /* Pozwala zawijać kafelki na mniejszych ekranach */
-    gap: 2rem;                 /* Odstęp między kolumnami */
-    justify-content: center;   /* Wyśrodkowanie w poziomie */
+    flex-wrap: wrap;         
+    gap: 2rem;                
+    justify-content: center;  
     padding: 2rem;
 }
 
-/* Pojedynczy element (kolumna) — układa kafelek i opis pionowo (jeden pod drugim) */
 .service-item {
     display: flex;
-    flex-direction: column;   /* Kafelek na górze, opis pod spodem */
-    align-items: center;      /* Wyśrodkowanie kafelka i opisu */
-    width: 200px;             /* Szerokość całej kolumny */
+    flex-direction: column;  
+    align-items: center;     
+    width: 200px;            
     text-align: center;
 }
 
-/* Morski kafelek */
 .service-card {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: 100px;
-    background-color: #35ae9a; /* Morski kolor z Twojego projektu */
+    background-color: #35ae9a; 
     color: white;
     font-weight: bold;
     text-decoration: none;
@@ -181,7 +178,6 @@ footer {
     transform: translateY(-3px);
 }
 
-/* Opis pod kafelkiem */
 .service-description {
     margin-top: 0.75rem;
     font-size: 0.9rem;
