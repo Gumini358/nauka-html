@@ -45,3 +45,25 @@ const navbar = document.querySelector(".navbar");
 menuToggle.addEventListener("click", () => {
     navbar.classList.toggle("open");
 });
+
+const ratings = document.querySelectorAll(".rating");
+
+ratings.forEach((rating) => {
+    const stars = rating.querySelectorAll("button");
+
+    stars.forEach((button) => {
+        button.addEventListener("click", () => {
+            const selectedValue = Number(button.dataset.value);
+
+            stars.forEach((star) => {
+                const starValue = Number(star.dataset.value);
+
+                if (starValue <= selectedValue) {
+                    star.textContent = "★";
+                } else {
+                    star.textContent = "☆";
+                }
+            });
+        });
+    });
+});

@@ -5,7 +5,7 @@ html {
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background-color: #69974f5b;
+    background-color: #ffffff;
     color: #0f172a;
 }
 
@@ -199,10 +199,34 @@ body {
 }
 
 .info-section {
-    padding: 2rem;
-    background-color: #f0f0f0;
-    margin-bottom: 2rem;
-    border-radius: 12px;
+    max-width: 1100px;
+    margin: 45px auto;
+    padding: 35px 30px;
+    background: transparent;
+    text-align: center;
+}
+
+.info-section h2 {
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.info-section p {
+    font-size: 16px;
+    color: #475569;
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.info-section h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #35aea3;
+    margin: 12px auto 20px;
+    border-radius: 10px;
 }
 
 .report-form {
@@ -417,4 +441,56 @@ footer p {
         width: 100%;
         box-sizing: border-box;
     }
+}
+
+.rating {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 8px;
+}
+
+.rating button {
+    background: none;
+    border: none;
+    padding: 0;
+    font-size: 26px;
+    color: #f59e0b;
+    cursor: pointer;
+}
+
+.news-section {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 25px 30px;
+    text-align: center;
+}
+
+.news-section h2 {
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.news-section h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #35aea3;
+    margin: 12px auto 20px;
+    border-radius: 10px;
+}
+
+.news-section p {
+    font-size: 16px;
+    color: #475569;
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.welcome-title {
+    max-width: 1200px;
+    margin: 18px auto;
+    padding: 0 24px;
 }
