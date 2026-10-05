@@ -3,39 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mitt Øygarden</title>
+    <title>Min Øygarden</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="top-header">
-        <h1>Mitt Øygarden</h1>
-        <p>Tjenenester  </p>
-        <p>Meld fra</p>
-        <p>Aktualet</p>
-        <p>Kontakt</p>
-        <button class="menu-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
+        <h1 class="nettside">Min Øygarden</h1>
+        <button class="menu-toggle" aria-label="Åpne meny">
+    <span></span>
+    <span></span>
+    <span></span>
+</button>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="#tjenester">Tjenester</a></li>
+                <li><a href="#meld-fra">Meld fra</a></li>
+                <li><a href="#aktualitet">Aktualitet</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+        </nav>
     </header>
-    <header class="Finn tjenester, meld fra, aktualet, kontakt">
-        
-    </header>
-    
-    <h2>Velkommen til Mitt Øygarden!</h2>
-        </div>
-    </section>
-   
+    <main>
+    <h2>Velkommen til Min Øygarden!</h2>
+    <section id="tjenester">
     <section class="intro">
     <article>
-        <p>Populære tjenester i Øygarden</p>
+        <h2>Populære tjenester i Øygarden</h2>
+        <p> Finn raskt frem til kommunale tjenester og informasjon.
+    Velg en kategori nedenfor for å komme i gang.</p>
+    <div class="service-search">
+        <input type="text" placeholder="Søk etter tjenester...">
+        <p id="no-results" style="display: none;">Ingen tjenester funnet. Prøv et annet søkeord.</p>
+    </div>
     </article>
     </section>
     <div class="layout-wrapper">
-        <nav class="main-nav hidden">
-           
-        </nav>
 
             <div class="services-container">
 
@@ -89,10 +91,96 @@
     </p>
     <img src="https://vcdn.polarismedia.no/e7d771e2-3aa4-40d5-a12b-ff4c24a81d8c?fit=clip&q=80&tight=false&w=2000" alt="Byggesaker i Øygarden" class="service-image">
   </div>
+  <div class="service-item">
+    <a href="http://www.nav.no/"
+    target="_blank" class="service-card">NAV</a>
+    <p class="service-description">
+      Her kan du finne informasjon om NAV-tjenester i Øygarden.
+      <br>
+      <a href="https://www.nav.no/">Les mer</a>
+    </p>
+    <img src="https://g.acdn.no/obscura/API/dynamic/r1/ece5/tr_2000_2000_s_f/1786958922000/nett/2026/8/17/11/NTB_8cnfHL4p5QY.jpg?chk=2459BF" alt="NAV i Øygarden" class="service-image">
+  </div>
 
+</section> <!-- Closing the "tjenester" section -->
+    <section id="tjenester" class="info-section">
+        <h2>Tjenester</h2>
+        <p>Her finner du informasjon om ulike tjenester i Øygarden.</p>
+    </section>
 </div>
         </div>
     </div>
+    </main>
+    </main>
+
+<section id="aktualitet" class="news-section">
+
+    <div class="news-header">
+        <div>
+            <p class="section-label">AKTUELT</p>
+            <h2>Aktuelt i Øygarden</h2>
+            <p>Nyheter og viktig informasjon fra kommunen.</p>
+        </div>
+    </div>
+
+</section>
+
+<section id="meld-fra" class="info-section">
+    <section id="meld-fra" class="info-section">
+        <h2>Meld fra</h2>
+        <p>Her kan du melde fra om ulike saker i Øygarden.</p>
+        <form class="report-form">
+          <label for="report-subject">Emne:</label>
+          <input type="text" id="report-subject" name="report-subject" required>
+
+          <label for="report-message">Melding:</label>
+          <textarea id="report-message" name="report-message" rows="4" required></textarea>
+
+          <button type="submit" class="btn">Send</button>
+        </form>
+        <p id="form-message"></p>
+    </section>
+    <section id="aktualitet" class="info-section">
+        <h2>Aktualitet</h2>
+        <p>Her finner du nyheter og oppdateringer fra Øygarden.</p>
+        <div class="news-container">
+
+    <article class="news-card">
+        <span class="news-date">1. oktober 2026</span>
+        <h3>Kommunale nyheter</h3>
+        <p>
+            Hold deg oppdatert på nyheter og informasjon
+            fra Øygarden kommune.
+        </p>
+        <a href="#">Les mer</a>
+    </article>
+
+    <article class="news-card">
+        <span class="news-date">1. oktober 2026</span>
+        <h3>Arrangementer i Øygarden</h3>
+        <p>
+            Se hva som skjer i Øygarden og finn kommende
+            arrangementer og aktiviteter.
+        </p>
+        <a href="#">Les mer</a>
+    </article>
+
+    <article class="news-card">
+        <span class="news-date">1. oktober 2026</span>
+        <h3>Viktig informasjon</h3>
+        <p>
+            Her finner du viktige meldinger og aktuell
+            informasjon for innbyggere i Øygarden.
+        </p>
+        <a href="#">Les mer</a>
+    </article>
+
+</div>
+    </section>
+    <section id="kontakt" class="info-section">
+        <h2>Kontakt</h2>
+        <p>Kontaktinformasjon for Øygarden kommune.</p>
+    </section>
 
     <footer>
         <p>Kontakt oss: post@oygarden.kommune.no</p>
